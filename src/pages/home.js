@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react'
+import axios from 'axios';
 import Champions from '../components/campions'
 // import Header from '../components/header'
 
@@ -13,13 +14,11 @@ const Home = () => {
   const url = 'https://raw.githubusercontent.com/ivanaolortegui/League-of-Legends-React/master/src/data/data.json'
 
   const fetchData = async () => {
-    const response = await fetch(url)
-    response
-      .json()
-      .then(res => {
-        setData(res.data)
-        setKeys(Object.keys(res.data))
-      })
+    const response = await axios.get(url);
+    console.log(response.data.data);
+        setData(response.data.data)
+        setKeys(Object.keys(response.data.data))
+      
   }
 
   useEffect(() => { fetchData() }, [url])
