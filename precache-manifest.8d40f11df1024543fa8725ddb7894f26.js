@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "93f06ba7de95601526fb7396da24d308",
+    "revision": "85aaf7a051f88f9bc7990c3126e572d8",
     "url": "/React-League-of-Legends/index.html"
   },
   {
-    "revision": "0c95cb3d59f4be406412",
+    "revision": "d6eaf6f3e929eeda730c",
     "url": "/React-League-of-Legends/static/css/main.34de6062.chunk.css"
   },
   {
-    "revision": "5762865b87e4680f00ba",
-    "url": "/React-League-of-Legends/static/js/2.a1e267c1.chunk.js"
+    "revision": "4a8228dfb569a0775f19",
+    "url": "/React-League-of-Legends/static/js/2.f8e3af9d.chunk.js"
   },
   {
-    "revision": "0c95cb3d59f4be406412",
-    "url": "/React-League-of-Legends/static/js/main.97353001.chunk.js"
+    "revision": "d6eaf6f3e929eeda730c",
+    "url": "/React-League-of-Legends/static/js/main.08150d86.chunk.js"
   },
   {
     "revision": "0c3ea79659843b986cf6",
