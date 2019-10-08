@@ -1,22 +1,21 @@
 {
   "files": {
-    "main.css": "/React-League-of-Legends/static/css/main.b100e6da.chunk.css",
-    "main.js": "/React-League-of-Legends/static/js/main.5442965c.chunk.js",
-    "main.js.map": "/React-League-of-Legends/static/js/main.5442965c.chunk.js.map",
+    "main.css": "/React-League-of-Legends/static/css/main.34de6062.chunk.css",
+    "main.js": "/React-League-of-Legends/static/js/main.97353001.chunk.js",
+    "main.js.map": "/React-League-of-Legends/static/js/main.97353001.chunk.js.map",
     "runtime-main.js": "/React-League-of-Legends/static/js/runtime-main.d8e1cf05.js",
     "runtime-main.js.map": "/React-League-of-Legends/static/js/runtime-main.d8e1cf05.js.map",
-    "static/js/2.1632cf1e.chunk.js": "/React-League-of-Legends/static/js/2.1632cf1e.chunk.js",
-    "static/js/2.1632cf1e.chunk.js.map": "/React-League-of-Legends/static/js/2.1632cf1e.chunk.js.map",
+    "static/js/2.a1e267c1.chunk.js": "/React-League-of-Legends/static/js/2.a1e267c1.chunk.js",
+    "static/js/2.a1e267c1.chunk.js.map": "/React-League-of-Legends/static/js/2.a1e267c1.chunk.js.map",
     "index.html": "/React-League-of-Legends/index.html",
-    "precache-manifest.0b5a101f6a587505b5a14462a3d44271.js": "/React-League-of-Legends/precache-manifest.0b5a101f6a587505b5a14462a3d44271.js",
+    "precache-manifest.82c926cef45894c377af232313e9ccc6.js": "/React-League-of-Legends/precache-manifest.82c926cef45894c377af232313e9ccc6.js",
     "service-worker.js": "/React-League-of-Legends/service-worker.js",
-    "static/css/main.b100e6da.chunk.css.map": "/React-League-of-Legends/static/css/main.b100e6da.chunk.css.map",
-    "static/media/logo.svg": "/React-League-of-Legends/static/media/logo.25bf045c.svg"
+    "static/css/main.34de6062.chunk.css.map": "/React-League-of-Legends/static/css/main.34de6062.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.d8e1cf05.js",
-    "static/js/2.1632cf1e.chunk.js",
-    "static/css/main.b100e6da.chunk.css",
-    "static/js/main.5442965c.chunk.js"
+    "static/js/2.a1e267c1.chunk.js",
+    "static/css/main.34de6062.chunk.css",
+    "static/js/main.97353001.chunk.js"
   ]
 }
