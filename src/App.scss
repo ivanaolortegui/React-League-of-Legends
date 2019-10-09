@@ -1,0 +1,139 @@
+
+$gold-dar: #937341;
+body {
+  margin: 0;
+  background:url('./assets/fondo-lol.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0px;
+  color: white;
+} 
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  .header__img {
+    width: 210px
+  }
+}
+
+.select-role{
+  display: inline-block;
+	width: 10%;
+	cursor: pointer;
+  padding: 7px 10px;
+  height: 42px;
+  outline: 0; 
+  border: 0;
+  border-radius: 2%;
+  font-family: "Caudex", serif;
+  background: url(./assets/select-dro.png) no-repeat 95% center;
+  -webkit-appearance: none;
+	font-size: 1em;
+	color: $gold-dar;
+	border:1px solid $gold-dar;
+  position: relative;
+  transition: all 0.25s ease;
+  overflow: hidden;
+  overflow: -moz-hidden-unscrollable;
+  &:focus {
+    color: #b6935b;
+    outline: 1px solid #b6935b ;
+		padding: 3px 3px 3px 3px;
+		transition: .3s all ease-out;
+	}
+   
+}
+
+.input-search {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2017.0.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0D%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3E%0D%0A%3Csvg%20version%3D%221.1%22%20id%3D%22icons%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%0D%0A%09%20width%3D%2218px%22%20height%3D%2217.8px%22%20viewBox%3D%220%200%2018%2017.8%22%20style%3D%22enable-background%3Anew%200%200%2018%2017.8%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cstyle%20type%3D%22text/css%22%3E%0D%0A%09.st0%7Bfill%3A%239F9E9F%3B%7D%0D%0A%3C/style%3E%0D%0A%3Cpath%20class%3D%22st0%22%20d%3D%22M17.4%2C15.1l-3.8-3.8c0.7-1.1%2C1.2-2.5%2C1.2-3.9c0-4-3.3-7.3-7.3-7.3c-4%2C0-7.3%2C3.3-7.3%2C7.3c0%2C4%2C3.3%2C7.3%2C7.3%2C7.3%0D%0A%09c1.4%2C0%2C2.8-0.4%2C3.9-1.2l3.8%2C3.8c0.3%2C0.3%2C0.7%2C0.5%2C1.1%2C0.5c0.4%2C0%2C0.8-0.2%2C1.1-0.5C18%2C16.7%2C18%2C15.7%2C17.4%2C15.1z%20M2.2%2C7.4%0D%0A%09c0-2.9%2C2.3-5.2%2C5.2-5.2c2.9%2C0%2C5.2%2C2.3%2C5.2%2C5.2c0%2C2.9-2.3%2C5.2-5.2%2C5.2C4.6%2C12.6%2C2.2%2C10.2%2C2.2%2C7.4z%22/%3E%0D%0A%3C/svg%3E%0D%0A');
+	background-position: 95% 50%;
+	background-repeat: no-repeat;
+  background-color: #3a36304f;
+  border:1px solid $gold-dar;
+  cursor: pointer;
+  font-weight: 300;
+  font-family: "Caudex", serif;
+  font-size: .875em;
+	padding: 10px;
+	position: relative;
+	transition: .3s all ease-out;
+  width: 20em;
+  height: 43px;
+  outline: 0; 
+  color: $gold-dar;
+  border-radius: 2px;
+  &:focus {
+    color: #b6935b;
+    outline: 1px solid #b6935b ;
+		padding: 10px 10px 10px 30px;
+		transition: .3s all ease-out;
+	}
+}
+.container-champions {
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: 48% 48%;
+  margin: 1%;
+  color: $gold-dar;
+  .container-champions__items { 
+    cursor: pointer;
+    border-style: solid;
+    border-width: 1px;
+    border-image-source: linear-gradient(90deg, rgba(227, 191, 119, 0.603) 0%, rgb(147, 115, 65) 35%);
+    border-image-slice: 1;
+    margin-top: 26px;
+    &:hover {
+      color: #b6935b;
+      outline: 1px solid #b6935b ;
+      transition: .3s all ease-out;
+    }
+    .container-champions__img {
+      width: 100%;
+    }
+  }
+ 
+}
+
+/*  Móviles en horizontal o tablets en vertical */
+  
+@media screen and (min-width: 767px) {
+  .container-champions {
+    display: grid;
+    grid-template-columns:  22% 22% 22% 22%  ;
+   }
+}
+
+/* Tablets en horizonal y escritorios normales */
+@media screen and (min-width: 1024px) {
+  .container-champions {
+    display: grid;
+    grid-template-columns: 19% 19% 19% 19% 19%;
+   }
+}
+/* Escritorios muy anchos */
+@media screen and (min-width: 1200px) {
+  .container-champions {
+    display: grid;
+    grid-template-columns: 13% 13% 13% 13% 13% 13% 13%;
+   }
+}
