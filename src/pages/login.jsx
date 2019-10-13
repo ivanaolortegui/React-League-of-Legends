@@ -25,7 +25,7 @@ const formValid = ({ formErrors, ...rest }) => {
   return valid;
 };
 
-const Login = () => {
+const Login = (props) => {
 
   const [imputs, setSubmit] = useState({
     firstName: null,
@@ -43,13 +43,7 @@ const Login = () => {
     e.preventDefault();
     if (formValid(imputs)) {
       setError(false)
-      console.log(`
-        --SUBMITTING--
-        First Name: ${imputs.firstName}
-        Last Name: ${imputs.lastName}
-        Email: ${imputs.email}
-        Password: ${imputs.password}
-      `);
+      props.history.push('/home');
     } else {
       setError(true)
       console.error("FORM INVALID - DISPLAY ERROR MESSAGE");
@@ -130,11 +124,11 @@ const Login = () => {
             noValidate
             onChange={handleChange}
           />
-         
+
           {formErrors.password.length > 0 && (
             <span className="errorMessage">{formErrors.password}</span>
           )}
-           
+
         </div>
         <strong> ¿Olvidaste la contraseña?</strong>
         <div className="createAccount">
