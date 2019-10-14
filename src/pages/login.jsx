@@ -130,7 +130,7 @@ const Login = (props) => {
           )}
 
         </div>
-        <strong> ¿Olvidaste la contraseña?</strong>
+        <strong className="align-end"> ¿Olvidaste la contraseña?</strong>
         <div className="createAccount">
           <button type="submit">Ingresar</button>
           <p>¿No tienes cuenta? <strong>Registrate</strong></p>

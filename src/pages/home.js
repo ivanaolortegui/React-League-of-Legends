@@ -9,7 +9,7 @@ import '../App.scss';
 const Home = () => {
   const [data, setData] = useState([])
   const [keys, setKeys] = useState([])
-  const url = 'https://raw.githubusercontent.com/ivanaolortegui/League-of-Legends-React/master/src/data/data.json'
+  const url = 'https://raw.githubusercontent.com/ivanaolortegui/React-League-of-Legends/master/src/data/data.json'
 
   const fetchData = async () => {
     const response = await fetch(url)
@@ -22,7 +22,6 @@ const Home = () => {
   }
 
   useEffect(() => { fetchData() }, [url])
-
 
   const filter = (e, filterBy) => {
     const result = Object.keys(data).filter(ele => data[ele][filterBy].indexOf(e.target.value) !== -1)
@@ -38,27 +37,30 @@ const Home = () => {
     setKeys(sortData);
   }
 
-  
+
 
   return (
     <div>
-      <Header/>
-      {<form>
-        <select onChange={(e)=>filter( e,'tags')} className="select-role">
-          <option value="all">Todos</option>
-          <option value="Fighter">Fighter</option>
-          <option value="Tank">Tanque</option>
-          <option value="Mage">Mago</option>
-          <option value="Assassin">Asesino</option>
-        </select>
-        <select onChange={sort} className="select-role">
-          <option value="A-Z">A-Z</option>
-          <option value="Z-A">Z-A</option>
-        </select>
-        <input type="text" onChange={(e)=>filter( e,'id')} className="input-search" placeholder="Buscar"/>
+      <Header />
+      {<form className="form-inputs">
+        <div className="selects">
+          <select onChange={(e) => filter(e, 'tags')} className="select-role">
+            <option value="all">Todos</option>
+            <option value="Fighter">Fighter</option>
+            <option value="Tank">Tanque</option>
+            <option value="Mage">Mago</option>
+            <option value="Assassin">Asesino</option>
+          </select>
+          <select onChange={sort} className="select-role">
+            <option value="A-Z">A-Z</option>
+            <option value="Z-A">Z-A</option>
+          </select>
+        </div>
+
+        <input type="text" onChange={(e) => filter(e, 'id')} className="input-search" placeholder="Buscar" />
 
       </form>}
-      <p>Results: {keys.length}</p>
+      <h2 className="header">Campeones: {keys.length}</h2>
       <Champions keys={keys} data={data} />
     </div>
   )

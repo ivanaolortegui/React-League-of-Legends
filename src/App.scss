@@ -6,7 +6,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
   margin: 0px;
-  color: white;
+  color: $gold-dar;
 } 
 
 .App {
@@ -35,10 +35,16 @@ body {
     width: 210px
   }
 }
-
+.form-inputs {
+  display: flex;
+  justify-content: space-evenly;
+  .selects {
+    width: 273px
+  }
+}
 .select-role{
   display: inline-block;
-	width: 10%;
+	width: 40%;
 	cursor: pointer;
   padding: 7px 10px;
   height: 42px;
@@ -77,7 +83,7 @@ body {
 	padding: 10px;
 	position: relative;
 	transition: .3s all ease-out;
-  width: 20em;
+  width: 11em;
   height: 43px;
   outline: 0; 
   color: $gold-dar;
@@ -94,7 +100,7 @@ body {
   justify-content: space-around;
   grid-template-columns: 48% 48%;
   margin: 1%;
-  color: $gold-dar;
+  color: #c4b998;
   .container-champions__items { 
     cursor: pointer;
     border-style: solid;
@@ -102,6 +108,7 @@ body {
     border-image-source: linear-gradient(90deg, rgba(227, 191, 119, 0.603) 0%, rgb(147, 115, 65) 35%);
     border-image-slice: 1;
     margin-top: 26px;
+    text-align: center;
     &:hover {
       color: #b6935b;
       outline: 1px solid #b6935b ;
@@ -110,8 +117,10 @@ body {
     .container-champions__img {
       width: 100%;
     }
+    .container-champions__name {
+      color: $gold-dar;
+    }
   }
- 
 }
 
 /*  Móviles en horizontal o tablets en vertical */

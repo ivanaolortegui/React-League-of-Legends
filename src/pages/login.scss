@@ -11,100 +11,97 @@
     background:url('../assets/login.jpg'); 
     background-attachment: fixed;
     background-size: cover;
-  }
-  
-  .form-wrapper {
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    padding: 10px 40px;
-    border-radius: 6px;
-    box-shadow: 0px 10px 50px #555;
-    background-color: #000a14c2;
-    border: solid 1px  #937341;
-  }
-  .img-logo {
-    width: 200px;
-  }
-
-  
-  input {
-    background-color: #000a14cb;
-    border:1px solid $gold-dar;
-    cursor: pointer;
-    font-weight: 300;
-    font-family: "Caudex", serif;
-    font-size: .875em;
-    padding: 10px;
-    position: relative;
-    transition: .3s all ease-out;
-    height: 43px;
-    outline: 0; 
-    color: $gold-dar;
-    border-radius: 3px;
-    &:focus {
-      color: #b6935b;
-      outline: 1px solid #b6935b ;
-      padding: 3px 3px 3px 3px;
-      transition: .3s all ease-out;
-    } 
-  }
-  
-  input.error {
-    border: 1px solid rgb(255, 21, 21);
-  }
-  
-  .errorMessage {
-    color: rgb(255, 21, 21);
-    font-size: 0.85em;
-    display: relative;
-  }
-  
-  
-  .firstName,
-  .lastName,
-  .email,
-  .password {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-  }
-  
- 
-  .createAccount {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    button {
-      cursor: pointer;
-        background-color: rgba(123, 101, 57, 0.603);
-        color: #bba076;;
-      /*   border-image: linear-gradient( to top, #0d404c 0%, #0596aa 44%, #0596aa 93%, #0ac8b9 100%); */
-      border-image:  linear-gradient(90deg, rgba(227, 191, 119, 0.603) 0%, rgb(147, 115, 65) 35%);
-        border-image-slice: 1;
-        letter-spacing: 1.3px;
-        font-family: "Caudex", serif;
-        width: 100%;
-        margin-top: 1em;
-        padding: 8px 0px;
-        font-size: 1em;
-        font-weight: lighter;
-        letter-spacing: 1px;
-        margin-bottom: 0.25em;
-        &:hover {
-            color:   #067180;
-           
-            background-color: rgba(29, 53, 70, 0.76);;
-            border: 2px solid #067180;
-          }
+    color:  $gold-dar;
+   
+    .form-wrapper {
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      padding: 10px 40px;
+      border-radius: 6px;
+      box-shadow: 0px 10px 50px #555;
+      background-color: #000a14c2;
+      border: solid 1px  #937341;
+      .img-logo {
+        width: 200px;
+      }
+      .align-end {
+        text-align: end;
       }
       
-      /* small {
-        color: #999;
-        font-weight: lighter;
-      } */
+      input {
+        background-color: #000a14cb;
+        border:1px solid $gold-dar;
+        cursor: pointer;
+        font-weight: 300;
+        font-family: "Caudex", serif;
+        font-size: .875em;
+        padding: 10px;
+        position: relative;
+        transition: .3s all ease-out;
+        height: 43px;
+        outline: 0; 
+        color: $gold-dar;
+        border-radius: 3px;
+        &:focus {
+          color: #b6935b;
+          outline: 1px solid #b6935b ;
+          padding: 3px 3px 3px 3px;
+          transition: .3s all ease-out;
+        } 
+      }
+      
+      input.error {
+        border: 1px solid rgb(255, 21, 21);
+      }
+      
+      .errorMessage {
+        color: rgb(255, 21, 21);
+        font-size: 0.85em;
+        display: relative;
+      }
+      
+      
+      .firstName,
+      .lastName,
+      .email,
+      .password {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+      }
+      
+     
+      .createAccount {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        button {
+          cursor: pointer;
+            background-color: rgba(123, 101, 57, 0.603);
+            color: #bba076;;
+            border-image:  linear-gradient(90deg, rgba(227, 191, 119, 0.603) 0%, rgb(147, 115, 65) 35%);
+            border-image-slice: 1;
+            letter-spacing: 1.3px;
+            font-family: "Caudex", serif;
+            width: 100%;
+            margin-top: 1em;
+            padding: 8px 0px;
+            font-size: 1em;
+            font-weight: lighter;
+            letter-spacing: 1px;
+            margin-bottom: 0.25em;
+            &:hover {
+                color:   #067180;
+                background-color: rgba(29, 53, 70, 0.76);;
+                border: 2px solid #067180;
+              }
+        }
+      }
+    }  
   }
+  
   
  
   
